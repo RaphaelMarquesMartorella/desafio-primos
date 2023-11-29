@@ -4,7 +4,7 @@ const isPrime = (num) => {
     if (num % 2 === 0 || num % 3 === 0) return false;
     let i = 6;
     let n = 1
-    while (i * 2 <= num) {
+    while (i * i <= num) {
         if (num % (n * i - 1) === 0 || num % (n * i + 1) === 0) return false;
         i++;
     }
